@@ -15,7 +15,7 @@ public class WalkOfFame {
 		// 2. Make the robot draw a star shape. Hint: angle=144.
 int move = 1;
 		rob.penDown();
-	rob.setSpeed(100000);
+	rob.setSpeed(1000000000);
 		int count = 0;
 		int c0unt = 0;
 		while (c0unt < 100) {

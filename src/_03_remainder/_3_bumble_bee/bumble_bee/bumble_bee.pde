@@ -15,13 +15,29 @@ void draw() {
 (see the image on the recipe, it's a diagonal line of circles)
 Use remainder to make the colors alternate between yellow and black
 */
-
-
+ fill(#000000);
+  ellipse(400, 400, 50, 50);
+  //Use an if statement and remainder to alternate the color of your rings.
+  int number = 385;
+  for (int i=500; i>=0; i-=5){
+    if (i % 2 == 0) {    
+      fill(#FFF300);
+    } 
+    else {
+      System.out.println("number is odd");
+        fill(#000000); 
+  }
+   ellipse(number, number, 50, 50);
+   if (i % 20 == 0) {
+     System.out.println("20 more repeats completed");
+      number -= 15;
+    }
+  }
 
 /*
 Now put his head on using drawBeeFace(x,y)
 */
-
+ drawBeeFace(415,415);
 }
 
 /**************   Use these methods but  DON'T CHANGE THE CODE BELOW  **************/
@@ -36,8 +52,10 @@ void drawFlower(int x, int y) {
           rotate(radians(72));
      }
      fill(#fff9bb); // light yellow
-     ellipse(0, 0, 50, 50);
+    ellipse(0, 0, 50, 50);
 } 
+
+
 void drawBeeFace(int BeeFaceX, int BeeFaceY) {
      noStroke();
      fill(0, 0, 0);

@@ -32,7 +32,7 @@ public class FizzBuzz {
 				System.out.println("FizzBuzz");
 			}
 			// Divisible by 3
-			else if() { 
+			else if(i%3) { 
 				System.out.println("Fizz");
 			}
 			// Divisible by 5
